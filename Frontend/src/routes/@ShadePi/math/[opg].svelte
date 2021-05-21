@@ -14,6 +14,12 @@
 	export let opg;
 </script>
 
+<style>
+	.opg {
+		font-family: 'Times New Roman';
+	}
+</style>
+
 <svelte:head>
 	<title>{opg}</title>
 </svelte:head>
@@ -22,8 +28,8 @@
 
 <div>
 	{#each Opgs as Opg}
-		<span>
-			<h1>{ Opg.opgname }</h1><br/>
+		<span class="opg" id={Opg.opgname}>
+			<h2>{ Opg.opgname }</h2><br/>
 			<p>{ Opg.result }</p><br/><br/><br/>
 		</span>
 	{/each}
