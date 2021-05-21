@@ -1,6 +1,6 @@
 {
-  "name": "KcvWebSvelte",
-  "description": "TODO",
+  "name": "Kcv-v",
+  "description": "Kcv-v",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",

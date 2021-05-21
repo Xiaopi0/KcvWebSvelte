@@ -3,22 +3,28 @@
 		const { opg } = page.params;
 
 		const res = await this.fetch(`@ShadePi/math/${opg}.json`);
-		const Opg = await res.json();
+		const Opgs = await res.json();
 
-		return { Opg};
+		return { Opgs, opg };
 	}
 </script>
 
 <script>
-	export let Opg;
+	export let Opgs;
+	export let opg;
 </script>
 
 <svelte:head>
-	<title>Opg</title>
+	<title>{opg}</title>
 </svelte:head>
 
-<h1>Opg</h1>
+<h1>{opg}</h1>
 
-<div class='content'>
-	{Opg}
+<div>
+	{#each Opgs as Opg}
+		<span>
+			<h1>{ Opg.opgname }</h1><br/>
+			<p>{ Opg.result }</p><br/><br/><br/>
+		</span>
+	{/each}
 </div>
