@@ -1,4 +1,9 @@
 <script>
+import { text } from "svelte/internal";
+
+async function toOpg(event) {
+    console.log(event.target.selectedOpg.value)
+}
 </script>
 
 <style>
@@ -7,12 +12,21 @@
     }
 
     .Container {
-        display: flex;
-        justify-content: center;
+        text-align: center;
+    }
+
+    #selectedOpg {
+        min-width: 200px;
     }
 </style>
 
+<svelte:head>
+    <title>Opgs</title>
+</svelte:head>
+
 <div class="Container">
     <h1 class="Title" id="MainTitle">@ShadePi/math/index.svelte</h1><br />
-    <button onClick="console.log('LOL')" >Click Me</button>
+    <form class="opgForm" id="opgSelector" on:submit|preventDefault="{toOpg}">
+        <input type="text" name="selectedOpg" placeholder="Opg name eg. FP9_03_12_2019" id="selectedOpg"/>
+    </form>
 </div>
