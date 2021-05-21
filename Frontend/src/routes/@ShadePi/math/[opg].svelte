@@ -15,8 +15,9 @@
 </script>
 
 <style>
-	.opg {
+	.opgs {
 		font-family: 'Times New Roman';
+		text-align: center;
 	}
 </style>
 
@@ -24,9 +25,9 @@
 	<title>{opg}</title>
 </svelte:head>
 
-<h1>{opg}</h1>
 
-<div>
+<div class="opgs">
+	<h1>{opg}</h1>
 	{#each Opgs as Opg}
 		<span class="opg" id={Opg.opgname}>
 			<h2>{ Opg.opgname }</h2><br/>
