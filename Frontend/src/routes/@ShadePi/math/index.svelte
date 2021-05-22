@@ -1,4 +1,24 @@
 <script>
+import { text } from "svelte/internal";
+
+async function toOpg(event) {
+    const opgId = event.target.selectedOpg.value;
+    console.log(opgId)
+    const href = window.location.href;
+    console.log(href)
+    let newHref;
+    if(href.endsWith('/')) {
+        newHref = href + opgId;
+    } else {
+        newHref = href + '/' + opgId;
+    }
+    console.log(newHref)
+    try {
+       window.location.replace(newHref)
+    } catch (error) {
+        console.log(error)
+    }
+}
 </script>
 
 <style>
@@ -7,12 +27,21 @@
     }
 
     .Container {
-        display: flex;
-        justify-content: center;
+        text-align: center;
+    }
+
+    #selectedOpg {
+        min-width: 200px;
     }
 </style>
 
+<svelte:head>
+    <title>Opgs</title>
+</svelte:head>
+
 <div class="Container">
     <h1 class="Title" id="MainTitle">@ShadePi/math/index.svelte</h1><br />
-    <button onClick="console.log('LOL')" >Click Me</button>
+    <form class="opgForm" id="opgSelector" on:submit|preventDefault="{toOpg}">
+        <input type="text" name="selectedOpg" placeholder="Opg name eg. FP9_03_12_2019" id="selectedOpg"/>
+    </form>
 </div>
