@@ -2,7 +2,22 @@
 import { text } from "svelte/internal";
 
 async function toOpg(event) {
-    console.log(event.target.selectedOpg.value)
+    const opgId = event.target.selectedOpg.value;
+    console.log(opgId)
+    const href = window.location.href;
+    console.log(href)
+    let newHref;
+    if(href.endsWith('/')) {
+        newHref = href + opgId;
+    } else {
+        newHref = href + '/' + opgId;
+    }
+    console.log(newHref)
+    try {
+       window.location.replace(newHref)
+    } catch (error) {
+        console.log(error)
+    }
 }
 </script>
 
