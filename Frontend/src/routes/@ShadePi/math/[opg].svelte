@@ -25,6 +25,14 @@
 	#mainTitle {
 		font-weight: bold;
 	}
+
+	.StartOpg {
+		color: red;
+	}
+
+	.NonStartOpg {
+		color: green;
+	}
 </style>
 
 <svelte:head>
@@ -35,7 +43,7 @@
 <div class="opgs">
 	<h1 id="mainTitle">{opg}</h1>
 	{#each Opgs as Opg}
-		<span class="{classNames({'StartOpg': Opg.opgname.endsWith('a') || Opg.opgname.endsWith('1')}, `${Opg.opgname.replace(".", "_")}`, 'opg')}" id="{Opg.opgname.replace(".", "_")}">
+		<span class="{classNames({'StartOpg': Opg.opgname.endsWith('a') || Opg.opgname.endsWith('1')}, {'NonStartOpg': !Opg.opgname.endsWith('a') && !Opg.opgname.endsWith('1')}, `${Opg.opgname.replace(".", "_")}`, 'opg')}" id="{Opg.opgname.replace(".", "_")}">
 			{#if Opg.opgname.endsWith('a') || Opg.opgname.endsWith('1')}
 				<h1>{ Opg.opgname }</h1><br/>
 			{:else}
