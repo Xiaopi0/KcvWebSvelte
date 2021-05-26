@@ -1,8 +1,8 @@
 <script context="module">
 	export async function preload(page, session) {
-		const { opg } = page.params;
+		const { opg, fag, user } = page.params;
 
-		const res = await this.fetch(`@ShadePi/math/${opg}.json`);
+		const res = await this.fetch(`@${user}/${fag}/${opg}.json`);
 		const Opgs = await res.json();
 
 		return { Opgs, opg };
@@ -49,7 +49,8 @@
 			{:else}
 				<h2>{ Opg.opgname }</h2><br/>
 			{/if}
-			<p>{ Opg.result }</p><br/><br/><br/>
+			<p>Opgave: {@html Opg.opg }</p><br/>
+			<p>Resultat: {@html Opg.result }</p><br/><br/><br/>
 		</span>
 	{/each}
 </div>
