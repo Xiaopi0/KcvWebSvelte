@@ -1,0 +1,17 @@
+[
+    {
+        "opgname": "1",
+        "opg": "Udfyld de tomme felter nedenfor:",
+        "result": "<table><thead><tr><th>Atomsymbol|</th><th>|Står i hovedgruppe nr.|</th><th>|Står i periode nr.|</th><th>|Antal elektronskaller|</th><th>|Antal elektroner i yderste skal</th></tr></thead><tbody><tr><td>Be</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><td>Al</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><td>Sh</td><td>4</td><td>5</td><td>5</td><td>4</td></tr><tr><td>He</td><td>8</td><td>1</td><td>1</td><td>2</td></tr><tr><td>Se</td><td>6</td><td>4</td><td>4</td><td>6</td></tr></tbody></table>"
+    },
+    {
+        "opgname": "2",
+        "opg": "Her ser i skalmodeller af en række atomer. Der står ikke, hvilket grundstof der er tale om.<br/>Skriv atomsymbolet ved skalmodellen.<br/>Skriv antallet af protoner som x+, hvor x er antallet, ind i atomkernerne.",
+        "result": "See paper (reason: images)"
+    },
+    {
+        "opgname": "3",
+        "opg": "Hvor mange elektroner kan der højst være i den inderste elektronskal?",
+        "result": "2"
+    }
+]

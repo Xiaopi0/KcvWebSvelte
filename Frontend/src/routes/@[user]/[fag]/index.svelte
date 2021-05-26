@@ -1,4 +1,15 @@
+<script context="module">
+	export async function preload(page, session) {
+		const { user, fag } = page.params;
+
+		return { user, fag };
+	}
+</script>
+
 <script>
+export let fag
+export let user
+
 import { text } from "svelte/internal";
 
 async function toOpg(event) {
@@ -40,8 +51,8 @@ async function toOpg(event) {
 </svelte:head>
 
 <div class="Container">
-    <h1 class="Title" id="MainTitle">@ShadePi/math/index.svelte</h1><br />
+    <h1 class="Title" id="MainTitle">{`@${user}/${fag}/index.svelte` }</h1><br />
     <form class="opgForm" id="opgSelector" on:submit|preventDefault="{toOpg}">
-        <input type="text" name="selectedOpg" placeholder="Opg name eg. FP9_03_12_2019" id="selectedOpg"/>
+        <input type="text" name="selectedOpg" placeholder="Opg name fx. FP9_03_12_2019" id="selectedOpg"/>
     </form>
 </div>
