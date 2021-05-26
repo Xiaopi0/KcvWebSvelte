@@ -15,7 +15,8 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "polka": "next",
-    "sirv": "^1.0.0"
+    "sirv": "^1.0.0",
+    "three": "^0.128.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
