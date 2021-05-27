@@ -1,6 +1,7 @@
 [
 	{
 		"opgname": "1.a",
+        "deadline": "none",
         "opg": "50% af 100 kr. =",
 		"result": "50 kr."
 	},
@@ -26,6 +27,7 @@
     },
     {
         "opgname": "2.a",
+        "deadline": "none",
         "opg": "25% af 100 kr. =",
         "result": "25 kr."
     },
@@ -51,6 +53,7 @@
     },
     {
         "opgname": "3.a",
+        "deadline": "none",
         "opg": "10% af 100 kr. =",
         "result": "10 kr."
     },
@@ -76,6 +79,7 @@
     },
     {
         "opgname": "4.a",
+        "deadline": "none",
         "opg": "75% af 100 kr. =",
         "result": "75 kr."
     },

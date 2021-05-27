@@ -24,9 +24,4 @@ async function login(event) {
         <input class="formItem" type="password" name="Password" placeholder="Password" id="Password" /><br/>
         <input class="formItem" type="password" name="Confirm_Password" placeholder="Confirm Password" id="Confirm_Password" /><br/>
     </form>
-    <pre>
-        {#if email}
-            {email}
-        {/if}
-    </pre>
 </div>

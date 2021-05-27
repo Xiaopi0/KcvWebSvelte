@@ -27,11 +27,15 @@
 	}
 
 	.StartOpg {
-		color: red;
+		color: blue;
 	}
 
 	.NonStartOpg {
 		color: green;
+	}
+
+	#deadline {
+		color: red;
 	}
 </style>
 
@@ -46,10 +50,11 @@
 		<span class="{classNames({'StartOpg': Opg.opgname.endsWith('a') || Opg.opgname.endsWith('1')}, {'NonStartOpg': !Opg.opgname.endsWith('a') && !Opg.opgname.endsWith('1')}, `${Opg.opgname.replace(".", "_")}`, 'opg')}" id="{Opg.opgname.replace(".", "_")}">
 			{#if Opg.opgname.endsWith('a') || Opg.opgname.endsWith('1')}
 				<h1>{ Opg.opgname }</h1><br/>
+				<h2 id="deadline">Deadline: { Opg.deadline }</h2><br/>
 			{:else}
 				<h2>{ Opg.opgname }</h2><br/>
 			{/if}
-			<p>Opgave: {@html Opg.opg }</p><br/>
+			<p>Opgave: {@html Opg.opg }</p>
 			<p>Resultat: {@html Opg.result }</p><br/><br/><br/>
 		</span>
 	{/each}
