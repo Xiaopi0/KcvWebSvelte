@@ -1,6 +1,6 @@
 <script context="module">
 	export async function preload(page, session) {
-		const { opg, fag, user } = page.params;
+		const { user, fag, opg  } = page.params;
 
 		const res = await this.fetch(`@${user}/${fag}/${opg}.json`);
 		const Opgs = await res.json();
