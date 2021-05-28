@@ -102,5 +102,11 @@
         "opgname": "4.e",
         "opg": "75% af 20 kr. =",
         "result":"15 kr."
+    },
+    {
+        "opgname": "5.a",
+        "deadline": "none",
+        "opg": "2% af 100 kr. =",
+        "result": "2 kr."
     }
 ]
