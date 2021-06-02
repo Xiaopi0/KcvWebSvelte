@@ -1,0 +1,28 @@
+[
+    {
+        "opgname": "1",
+        "deadline": "9.06.2021",
+        "opg": "Hvad er grundstofnummeret for Radium?",
+        "result": "88"
+    },
+    {
+        "opgname": "2",
+        "opg": "Hvilket grundstof har atomnummeret 98?",
+        "result": "Cf == Californium"
+    },
+    {
+        "opgname":  "3",
+        "opg": "Hvad er Protontallet for Beryllium?",
+        "result": "4"
+    },
+    {
+        "opgname": "4",
+        "opg": "Hvilket grundstof har det kemiske tegn Fe?",
+        "result": "Jern"
+    },
+    {
+        "opgname": "5",
+        "opg": "Hvor mange elektroner er der i et iod-atom?",
+        "result": "53"
+    }
+]
