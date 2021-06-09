@@ -55,7 +55,11 @@
 				<h2>{ Opg.opgname }</h2><br/>
 			{/if}
 			<p>Opgave: {@html Opg.opg }</p>
-			<p>Resultat: {@html Opg.result }</p><br/><br/><br/>
+			{#if Opg.status != null}
+				<p>Status: {@html Opg.status}</p><br/><br/><br/>
+			{:else}
+				<p>Resultat: {@html Opg.result }</p><br/><br/><br/>
+			{/if}
 		</span>
 	{/each}
 </div>

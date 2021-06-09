@@ -24,5 +24,54 @@
         "opgname": "5",
         "opg": "Hvor mange elektroner er der i et iod-atom?",
         "result": "53"
+    },
+    {
+        "opgname": "6",
+        "opg": "Opskriv symbolerne for grundstofferne i hoved gruppe 7.",
+        "status": "Pending",
+        "result": "Pending"
+    },
+    {
+        "opgname": "7",
+        "opg": "Hvilke grundstoffer har samme antal elektroner i den yderste skal som oxygen?",
+        "result": "S, Se, Te, Po"
+    },
+    {
+        "opgname": "8",
+        "opg": "Opskriv symbolerne for grundstofferne i hoved gruppe 7.",
+        "status": "Pending",
+        "result": "Pending"
+    },
+    {
+        "opgname": "9",
+        "opg": "Hvilke grundstoffer har samme antal skaller som hydrogen?",
+        "result": "He"
+    },
+    {
+        "opgname": "10",
+        "opg": "Der er 13 grundstoffer, hvis kemiske symbol kun består a et bogstav. Find alle 13, og udfyld skemaet:",
+        "result": "<table><thead><tr><th>|Grundstofnavn|</th><th>|Atomnummer|</th><th>|Kemisk Symbol|</th></tr></thead><tbody><tr><td>Hydrogen</td><td>1</td><td>H</td></tr><tr><td>Bor</td><td>5</td><td>B</td></tr><tr><td>Carbon</td><td>6</td><td>C</td></tr><tr><td>Nitrogen</td><td>7</td><td>N</td></tr><tr><td>Oxygen</td><td>8</td><td>O</td></tr><tr><td>Fluor</td><td>9</td><td>F</td></tr><tr><td>Phosphor</td><td>15</td><td>P</td></tr><tr><td>Svovl</td><td>16</td><td>S</td></tr><tr><td>Kalium</td><td>19</td><td>K</td></tr><tr><td>Vanadium</td><td>23</td><td>V</td></tr><tr><td>Yttrium</td><td>39</td><td>Y</td></tr><tr><td>Iod</td><td>53</td><td>I</td></tr><tr><td>Uran</td><td>92</td><td>U</td></tr></tbody></table>"
+    },
+    {
+        "opgname": "11\t",
+        "opg": "I hvilke grundstoffer starter det kemiske symbol med bogstavet \"R\"? Skriv Grundstofnavnene:",
+        "result": "Rubidium, Ruthenium, Rhodium"
+    },
+    {
+        "opgname": "12",
+        "opg": "Hvad kan man læse om når man læser vandret i det periodiske system?",
+        "status": "Pending",
+        "result": "Pending"
+    },
+    {
+        "opgname": "13",
+        "opg": "Hvad symboliserer tallene i det periodiske system",
+        "status": "Pending",
+        "result": "Pending"
+    },
+    {
+        "opgname": "14",
+        "opg": "Giv et godt råd til dem, der skal lære at læse det periodiske system!",
+        "result": "Hør efter i undervisningen"
     }
 ]
