@@ -49,16 +49,16 @@
 	{#each Opgs as Opg}
 		<span class="{classNames({'StartOpg': Opg.opgname.endsWith('a') || Opg.opgname.endsWith('1')}, {'NonStartOpg': !Opg.opgname.endsWith('a') && !Opg.opgname.endsWith('1')}, `${Opg.opgname.replace(".", "_")}`, 'opg')}" id="{Opg.opgname.replace(".", "_")}">
 			{#if Opg.opgname.endsWith('a') || Opg.opgname.endsWith('1')}
-				<h1>{ Opg.opgname }</h1><br/>
+				<h1 id="opgname">{ Opg.opgname }</h1><br/>
 				<h2 id="deadline">Deadline: { Opg.deadline }</h2><br/>
 			{:else}
-				<h2>{ Opg.opgname }</h2><br/>
+				<h2 id="opgname">{ Opg.opgname }</h2><br/>
 			{/if}
-			<p>Opgave: {@html Opg.opg }</p>
+			<p id="opg">Opgave: {@html Opg.opg }</p>
 			{#if Opg.status != null}
-				<p>Status: {@html Opg.status}</p><br/><br/><br/>
+				<p id="status">Status: {@html Opg.status}</p><br/><br/><br/>
 			{:else}
-				<p>Resultat: {@html Opg.result }</p><br/><br/><br/>
+				<p id="result">Resultat: {@html Opg.result }</p><br/><br/><br/>
 			{/if}
 		</span>
 	{/each}

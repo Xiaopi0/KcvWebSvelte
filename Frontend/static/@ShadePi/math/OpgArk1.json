@@ -1,0 +1,19 @@
+[
+    {
+        "opgname": "2.1",
+        "deadline": "none",
+        "opg": "Hvor mange gram kartofler skal Mikkel bruge til suppe til 16 personer?",
+        "result": "2000"
+    },
+    {
+        "opgname": "2.2",
+        "opg": "Hvor mange personer kan Mikkel højst koge suppe til, hvis han har 2½ dl piskefløde?",
+        "result": "10"
+    },
+    {
+        "opgname": "2.3",
+        "opg": "Hvor meget bouillon skal Mikkel bruge til suppe til 6 personer?",
+        "status": "WIP",
+        "result": ""
+    }
+]
