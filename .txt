@@ -1,0 +1,25 @@
+
+  <script>
+    import { createForm } from "svelte-forms-lib";
+
+    const { form, handleChange, handleSubmit } = createForm({
+      initialValues: {
+        title: "",
+        name: "",
+        email: ""
+      },
+      onSubmit: values => {
+        alert(JSON.stringify(values));
+      }
+    });
+  </script>
+
+  <form on:submit={handleSubmit}>
+    <input
+      id="name"
+      name="name"
+      on:change={handleChange}
+      bind:value={$form.name}
+    />
+    <button type="submit">Submit</button>
+  </form>
